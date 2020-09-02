@@ -68,7 +68,7 @@ class Assignment2Cifar extends Component{
 
                             </form>
                             <ul className="flex-row">
-                
+
                             <button id = 'classify' type="button"   onClick={this.cifarClick}>Classify</button>
                                  {this.state.result? <div style={{margin:10}}>It looks like a {this.state.result}</div>:null}
                                 </ul>
