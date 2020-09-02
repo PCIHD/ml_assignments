@@ -4,7 +4,8 @@ import {HashRouter as Router , Route,Switch} from "react-router-dom";
 
 import Home from "./Home";
 import Header from "./layout/header";
-import Assignment2Cifar from "./Assignment2";
+import Assignment2Cifar from "./layout/Cifar10";
+import "./App.css";
 
 class App extends Component{
     constructor(props) {
