@@ -6,7 +6,7 @@ import React ,{Component} from 'react';
 
 
 
-class Assignment2Cifar extends Component{
+class Assignment2MNIST extends Component{
     constructor(props) {
         super(props);
         this.state = {
@@ -28,7 +28,7 @@ class Assignment2Cifar extends Component{
     cifarClick =  () =>{
         const formData = new FormData()
         formData.append('image',this.state.file)
-        fetch("backend/assignment2/cifar10/",{
+        fetch("backend/assignment2/mnist/",{
             method:'POST',
             body: formData
         })
@@ -58,7 +58,7 @@ class Assignment2Cifar extends Component{
 <div style={{display:'flex',alignSelf:"center",justifyContent:"center"}}>
                 <div className="card" style={{width:500 ,height:600,display:"flex",padding:30,margin:30}}>
                     <div className="card-body">
-                    <h5 className="card-title">Cifar10</h5>
+                    <h5 className="card-title">MNIST</h5>
                         {this.state.placeholder? <img src={this.state.fileuri}    style={{width:400,height:300,borderRadius:4,marginBottom:20}}/> : null}
                         <div style={{justifyContent:"center"}}>
                             <form id="file-upload-form" className="uploader" >
@@ -87,4 +87,4 @@ class Assignment2Cifar extends Component{
     }
 
 }
-export default Assignment2Cifar;
+export default Assignment2MNIST;

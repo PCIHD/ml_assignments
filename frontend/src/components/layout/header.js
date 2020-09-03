@@ -18,12 +18,12 @@ class Header extends Component{
                                 </Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" >
+                            <Link to="/assignment2MNIST" className="nav-link" >
                                 Mnist
-                            </a>
+                            </Link>
                         </li>
                         <li className="nav-item">
-                            <Link to='/assignment2' className="nav-link">
+                            <Link to='/assignment2cifar' className="nav-link">
                                 Cifar10
                                 </Link>
                         </li>

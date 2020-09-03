@@ -6,6 +6,7 @@ import Home from "./Home";
 import Header from "./layout/header";
 import Assignment2Cifar from "./layout/Cifar10";
 import "./App.css";
+import Assignment2MNIST from "./layout/mnist";
 
 class App extends Component{
     constructor(props) {
@@ -24,7 +25,8 @@ class App extends Component{
          <Header/>
          <Switch>
              <Route  exact path={'/'} component={Home} />
-             <Route  exact path ={'/assignment2'}  component={Assignment2Cifar} />
+             <Route  exact path ={'/assignment2Cifar'}  component={Assignment2Cifar} />
+             <Route  exact path ={'/assignment2MNIST'}  component={Assignment2MNIST} />
          </Switch>
      </Router>
 
