@@ -1,5 +1,6 @@
 import React , {Component} from 'react';
 import {Link} from "react-router-dom";
+import Header_comp from "./header_element";
 
 class Header extends Component{
     render() {
@@ -17,16 +18,9 @@ class Header extends Component{
                             Home <span className="sr-only">(current)</span>
                                 </Link>
                         </li>
-                        <li className="nav-item">
-                            <Link to="/assignment2MNIST" className="nav-link" >
-                                Mnist
-                            </Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link to='/assignment2cifar' className="nav-link">
-                                Cifar10
-                                </Link>
-                        </li>
+                        <Header_comp text_title='Mnist' url='/assignment2MNIST'/>
+                        <Header_comp text_title='Cifar10' url='/assignment2Cifar'/>
+                        <Header_comp text_title='Cats&Dogs' url='/cat&dogs'/>
                     </ul>
 
 
